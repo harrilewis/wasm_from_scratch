@@ -23,7 +23,7 @@ const { setModuleImports, getAssemblyExports, getConfig } =
 const config = getConfig();
 const exports = await getAssemblyExports(config.mainAssemblyName);
 
-//this calls into .NET (MyClass.Greeting) from JS
+//this calls into .NET (CSharpWrapper.Greeting) from JS
 const text = exports.CSharpWrapper.Greeting();
 console.log(text);
 
