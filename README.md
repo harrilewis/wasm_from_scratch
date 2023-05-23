@@ -1,5 +1,5 @@
 # wasm from scratch
-WebAssembly from .Net can be fiddly. What is the simplest and cleanest way to have C# code in the browser? Some experiments with comments to remind me what is going on.
+.Net to WebAssembly is new for me. What is the simplest and cleanest way to have C# code in the browser? Some experiments with comments to remind me what is going on.
 
 .csproj is worth reading - important stuff in there.
 
