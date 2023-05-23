@@ -4,7 +4,7 @@ import { dotnet } from "./dotnet.js";
 const is_browser = typeof window != "undefined";
 if (!is_browser) throw new Error(`Expected to be running in a browser`);
 
-//destructuring - the function returns an object and we assign straight away.
+//destructuring - the function returns an object with some functions and we assign straight away.
 const { setModuleImports, getAssemblyExports, getConfig } =
   await dotnet.create();
 
