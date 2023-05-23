@@ -8,14 +8,19 @@ https://learn.microsoft.com/en-us/aspnet/core/client-side/dotnet-interop
 
 ## To Run
 
-1. Run the following from command line:
-dotnet publish --configuration Release
+1. Install the `wasm-tools workload`, which brings in the related MSBuild targets.
 
-2. Navigate to the generated bin\Release\net7.0\browser-wasm\AppBundle
+`dotnet workload install wasm-tools`
 
-3. Open index.html (using server. Live Server VSCode plugin is easiest option here)
+2. Run the following from command line:
 
-4. You should see messages in the Chrome console
+`dotnet publish --configuration Release`
+
+3. Navigate to the generated bin\Release\net7.0\browser-wasm\AppBundle
+
+4. Open index.html (using server. Live Server VSCode plugin is easiest option here)
+
+5. You should see messages in the Chrome console
 
 ## Linking to other web projects as a wrapper for a library
 
