@@ -1,7 +1,10 @@
 # wasm from scratch
-Wasm from .Net can be fiddly. What is the simplest and cleanest way to have C# code in the browser. Some experiments with comments to remind me what is going on.
+WebAssembly from .Net can be fiddly. What is the simplest and cleanest way to have C# code in the browser? Some experiments with comments to remind me what is going on.
 
 .csproj is worth reading - important stuff in there.
+
+Recommended docs:
+https://learn.microsoft.com/en-us/aspnet/core/client-side/dotnet-interop
 
 ## To Run
 
