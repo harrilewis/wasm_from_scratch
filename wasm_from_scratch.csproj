@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <!-- creating this in a folder will automatically create bin and obj folders -->
+    <!-- the obj folder holds object (or intermediate) files which are compiled binary files that
+    haven't been linked yet. They're essentially fragments that will be combined to produce the
+    final executable -->
+
+    <PropertyGroup>
+        <!-- Target .net 7.0 or later -->
+        <TargetFramework>net7.0</TargetFramework>
+
+        <RuntimeIdentifier>browser-wasm</RuntimeIdentifier>
+        <OutputType>Exe</OutputType>
+
+        <!-- Enable the AllowUnsafeBlocks property, which permits the code generator in the Roslyn
+        compiler to use pointers for JS interop -->
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+        <!-- This file is published with the app, but use of the file isn't required if you're
+        integrating .NET into an existing JS app. Tried removing it but it is needed -->
+        <WasmMainJSPath>main.js</WasmMainJSPath>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <!-- Copy extra files when publishing the app -->
+	<!-- <ItemGroup>
+		<WasmExtraFilesToDeploy Include="index.html" />
+	</ItemGroup> -->
+    
+    <!-- if you want to add additional libraries.Include here -->
+    <!-- <ItemGroup>
+		<Reference Include="GShark">
+			<HintPath>C:\Users\harri\.nuget\packages\gshark\2.3.0\lib\netstandard2.0\GShark.dll</HintPath>
+		</Reference>
+	</ItemGroup> -->
+
+</Project>
